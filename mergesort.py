@@ -36,35 +36,22 @@ def mergeSort(merge_list):
 
 my_list = [54, 26, 93, 17, 77, 31, 44, 55, 20]
 
-unsorted_list = my_list.copy()
+plt.plot(range(len(my_list)), my_list)                  # Plotting vorher/nachher
+plt.show()
 
 mergeSort(my_list)
 
-fig, ax = plt.subplots(1, 2, figsize=(10, 4), sharey=True)
-
-ax[0].bar(range(len(unsorted_list)), unsorted_list)
-ax[0].set_xlabel("Index")
-ax[0].set_ylabel("Wert")
-ax[0].set_title("Vor dem Sortieren")
-ax[0].grid(axis="y")
-
-ax[1].bar(range(len(my_list)), my_list)
-ax[1].set_xlabel("Index")
-ax[1].set_ylabel("Wert")
-ax[1].set_title("Nach dem Sortieren")
-ax[1].grid(axis="y")
-
-fig.tight_layout()
+plt.plot(range(len(my_list)), my_list)
 plt.show()
 
 # import nachoben
 # funktionsnamen kleinschreiben
 # assignment in den while schleifen
-# list_to_sort_by_merge -> merge_list
+# list_to_sort_by_merge -> merge_ list
 # unnötig lange if bedingung
 # x variable entfernt
 # l r i variablen in eine zeile geschrieben
 # len(left) und len(right) durch variablen ersetzt, damit sie nicht jedesmal neuberechnet werden müssen
 # assignment funktion gelöscht, unnötig. kann direkt in die if schleife integriert werden.
 
-# plotting verfeinert. beschriftungen hinzugefügt. 2 in 1 graph. 
+# keine Ahnung ob beide Plots oder nur einer drinne bleiben sollte
